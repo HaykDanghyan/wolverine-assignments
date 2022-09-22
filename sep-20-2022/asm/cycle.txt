@@ -1,0 +1,15 @@
+main:
+    push rbp
+    mov rbp, rsp
+    mov DWORD PTR [rbp - 4], 20
+    mov DWORD PTR [rbp - 8], 0
+.L2
+    mov eax, DWORD PTR [rbp - 4]
+    cmp eax, DWORD PTR [rbp - 8]
+    jg .L3
+    add DWORD PTR [rbp - 8], 1
+    jmp .L2
+.L3
+    mov eax, 0
+    pop rbp
+    ret
