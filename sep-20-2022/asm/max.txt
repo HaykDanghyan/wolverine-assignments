@@ -1,10 +1,11 @@
-push rbp
-mov rbp, rsp
-mov DWORD PTR [rbp - 4], 20
-mov DWORD PTR [rbp - 8], 30
-mov eax, DWORD PTR [rbp - 4]
-cmp eax, DWORD PTR [rbp - 8]
-jge .L2
+main:
+    push rbp
+    mov rbp, rsp
+    mov DWORD PTR [rbp - 4], 20
+    mov DWORD PTR [rbp - 8], 30
+    mov eax, DWORD PTR [rbp - 4]
+    cmp eax, DWORD PTR [rbp - 8]
+    jge .L2
 
 .L2
     mov eax, DWORD PTR [rbp - 4]
