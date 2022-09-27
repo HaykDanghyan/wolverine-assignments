@@ -3,10 +3,6 @@
 #include <algorithm>
 #include "header.h"
 
-bool is_char(const char ch) {
-	return ((ch <= 'a' and ch >= 'z') and (ch >= 'A' and ch <= 'Z'));
-}
-
 void rtrim(std::string& str) {
 	int count = 0;
 	for (int i = str.length() - 1; i >= 0; --i) {
