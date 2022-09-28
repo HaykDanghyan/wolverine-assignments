@@ -1,0 +1,9 @@
+mov
+r1
+ 4
+mov
+r2
+ 5
+add
+r1
+ r2
